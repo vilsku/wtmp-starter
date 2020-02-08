@@ -1,91 +1,12 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  margin: 0;
+  margin: 10%;
   font-family: Arial;
-  font-weight: 600;
-}
-
-#nav {
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  margin: 1%;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-  width: 100%;}
-
-li {
-  display: inline-block;
-  padding: 10px;
-}
-
-li a {
-  color: brown;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 19px;
-}
-#search {
-  padding: 0.5% 2%;
-  border: 2px solid brown;
+  border: 1px solid turquoise;
   border-radius: 5px;
+  padding: 2%;
 }
 
-#showcase {
-  display: flex;
-  flex-direction: row;
-  height: 30vh;
-  background-color: lightgreen;
-}
-
-.slogan {
-  margin: auto;
-  text-align: center;
-}
-.img {
-  width: 60vw;
-  background: url('pannu.jpg');
-  background-size: cover;
-  position: relative;
-  right: 0;
-}
-.kolmio {
-  width: 0;
-  height: 0;
-  border-bottom: 30vh solid lightgreen;
-  border-right: 6vw solid transparent;
-  position: absolute;
-  left: 0vw;
-}
-main {
-  display: flex;
-  flex-direction: column;
-}
-.info-area {
-  margin: 4vw;
-  text-align: center;
-}
-.restaurants {
-  display: flex;
-  margin: 2vw;
-  text-align: center;
-  justify-content: space-evenly;
-}
-.restaurants p {
-  border: 2px dashed brown;
-  border-radius: 5px;
-  margin: 0.5vw;
-  padding: 1vw 18vw 9vw 1vw;
-  background-color: lightgrey;
+.resultParas {
+  padding: 1%;
 }
