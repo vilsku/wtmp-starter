@@ -1,12 +1,121 @@
-body {
-  margin: 10%;
-  font-family: Arial;
-  text-align: center;
-  border: 1px solid turquoise;
-  border-radius: 5px;
-  padding: 2%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.resultParas {
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 1%;
+  font-weight: 600;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  width: 100%;}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+li a {
+  color: brown;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+#search {
+  padding: 0.5% 2%;
+  border: 2px solid brown;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+#showcase {
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  background-color: lightgreen;
+}
+
+.slogan {
+  margin: auto;
+  text-align: center;
+  font-weight: 600;
+}
+.img {
+  width: 60vw;
+  background: url('pannu.jpg');
+  background-size: cover;
+  position: relative;
+  right: 0;
+}
+.kolmio {
+  width: 0;
+  height: 0;
+  border-bottom: 30vh solid lightgreen;
+  border-right: 6vw solid transparent;
+  position: absolute;
+  left: 0vw;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.info-area {
+  margin: 4vw;
+  text-align: center;
+  font-weight: 600;
+}
+.restaurants {
+  display: flex;
+  margin: 2vw;
+  justify-content: space-evenly;
+}
+.restaurants h3 {
+  font-weight: 600;
+}
+.restaurants div {
+  border: 2px dashed brown;
+  border-radius: 5px;
+  margin: 0.5vw;
+  padding: 1vw;
+  max-width: 40vw;
+  background-color: lightgrey;
+}
+.laatikko1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.laatikko1 button {
   padding: 1%;
+  display: inline-block;
+  color: #9BADBF;
+}
+
+.laatikko1 ul {
+  background-color: lightgrey;
+}
+
+.laatikko2 ul {
+  background-color: lightgrey;
 }

@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="assets/styles.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
   <body>
-    <h1>Number guessing game!</h1>
-    <p>The number is between 1 and 100</p>
-    <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="resultText"></p>
-      <p class="lowOrHi"></p>
-    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="default.asp">Etusivu</a></li>
+        <li><a href="default.asp">Ruokalistat</a></li>
+        <li><a href="default.asp">Ravintolat</a></li>
+        <li><a href="default.asp">Yhteystiedot</a></li>
+      </ul>
 
-    <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-    <input type="submit" value="Submit guess" class="guessSubmit">
+
+      <input type="text" id="search" placeholder="Hae ravintolan nimellä...">
+    </nav>
+
+    <header id="showcase">
+      <div class="slogan">
+        <p>Lounari.</p>
+        <p>Missä tänään syötäisiin.</p>
+      </div>
+      <div class="img">
+        <div class="kolmio">
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="info-area">
+        <p>Missä tänään syötäisiin? Tuttu tarina ennen lounashetkeä.</p>
+        <p>Palvelu etsii lähelläsi olevat lounaspaikat, sekä näyttää niiden päivittäisen lounaslistan.
+          Viikottaiset lounaslistat ovat myös käytettävissäsi. Pääset niihin klikkaamalla ravintolan logoa.</p>
+      </div>
+      <div class="restaurants">
+        <div class="laatikko1">
+          <h3>Ravintola 1</h3>
+            <button id="kieli_en" onclick="changeLangEn()">EN</button>
+            <button id="kieli_fi" onclick="changeLangFi()">FI</button>
+            <button id="sort_asc" onclick="sort(menu, 1)">ASC</button>
+            <button id="sort_desc" onclick="sort(menu, 0)">DESC</button>
+            <button id="random" onclick="displayRandomCourse()">Random dish</button>
+            <ul id="ravintola1"></ul>
+        </div>
+        <div class="laatikko2">
+          <h3>Ravintola 2</h3>
+          <ul id="ravintola2"></ul>
+        </div>
+      </div>
+    </main>
+
 
     <script src="index.js"></script>
   </body>
