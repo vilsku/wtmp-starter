@@ -94,13 +94,32 @@ main {
 .restaurants h3 {
   font-weight: 600;
 }
-.restaurants div {
+.restaurants .laatikko1, .laatikko2 {
   border: 2px dashed brown;
   border-radius: 5px;
   margin: 0.5vw;
   padding: 1vw;
   max-width: 40vw;
   background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.restaurants .otsikko {
+  display: flex;
+  flex-direction: row;
+  height: 4vh;
+  justify-content: space-between;
+}
+.nappulat {
+  display: flex;
+  flex-direction: row;
+}
+.nappulat button {
+  width: 2vw;
+}
+.menu_ravintola1{
+  padding-top: 1vh;
 }
 .laatikko1 {
   display: flex;
